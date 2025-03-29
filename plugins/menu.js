@@ -5,7 +5,7 @@ cmd(
   {
     pattern: "menu",
     alise: ["getmenu"],
-    react: "📃",
+    react: "📁",
     desc: "get cmd list",
     category: "main",
     filename: __filename,
@@ -85,9 +85,9 @@ ${menu.group}
 ${menu.search}
 
 
-👻𝐌𝐚𝐝𝐞 𝐛𝐲 KAVEE-MD👻
+*👻MADE BY KAVINDU👻*
 
-> ROBIN MENU MSG
+> KAVEE-MD MENU MSG
 `;
       await robin.sendMessage(
         from,
