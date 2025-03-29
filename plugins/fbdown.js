@@ -5,7 +5,7 @@ cmd(
   {
     pattern: "fb",
     alias: ["facebook"],
-    react: "💀",
+    react: "#️⃣",
     desc: "Download Facebook Video",
     category: "download",
     filename: __filename,
@@ -65,7 +65,7 @@ cmd(
 👻 *Title*: ${title || "Unknown"}
 👻 *Quality*: ${hd ? "HD Available" : "SD Only"}
 
-𝐌𝐚𝐝𝐞 𝐛𝐲 𝐒_𝐈_𝐇_𝐈_𝐋_𝐄_𝐋
+MADE BY KAVINDU
         `;
       await robin.sendMessage(
         from,
