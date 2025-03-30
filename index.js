@@ -402,6 +402,8 @@ app.get("/", (req, res) => {
 app.listen(port, '0.0.0.0', () => {
    console.log(`Server listening on port ${port}`);
 });
-setTimeout(() => {
-  connectToWA();
-}, 4000);
+
+connectToWA().catch(error => {
+  console.error('Failed to connect:', error);
+  process.exit(1);
+});
