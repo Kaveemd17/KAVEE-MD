@@ -401,9 +401,9 @@ async function connectToWA() {
 app.get("/", (req, res) => {
   res.send("hey, 👻KAVEE-MD👻 started✅");
 });
-app.listen(port, '0.0.0.0', () =>
-   console.log(`Server listening on port ${port}`)
-);
+app.listen(port, '0.0.0.0', () => {
+   console.log(`Server listening on port ${port}`);
+});
 setTimeout(() => {
   connectToWA();
 }, 4000);
