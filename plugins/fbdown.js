@@ -1,5 +1,4 @@
 const { cmd, commands } = require("../command");
-const { cmd } = require('../command');
 const getFbVideoInfo = require("fb-downloader-scrapper");
 
 cmd(
