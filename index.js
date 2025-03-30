@@ -54,8 +54,7 @@ const port = process.env.PORT || 5000;
 
 async function connectToWA() {
   
- 
-  //===========================
+   //===========================
 
   console.log("Connecting 👻KAVEE-MD👻");
   const { state, saveCreds } = await useMultiFileAuthState(
@@ -123,7 +122,6 @@ async function connectToWA() {
     ) {
     await kaveemd.readMessages([mek.key]);
   }
-    
     const m = sms(robin, mek);
     const type = getContentType(mek.message);
     const content = JSON.stringify(mek.message);
