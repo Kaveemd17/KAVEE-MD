@@ -64,7 +64,7 @@ async function connectToWA() {
 
   const robin = makeWASocket({
     logger: P({ level: "silent" }),
-    printQRInTerminal: false,
+    printQRInTerminal: true,
     browser: Browsers.macOS("Firefox"),
     syncFullHistory: true,
     auth: state,
