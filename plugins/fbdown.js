@@ -11,7 +11,7 @@ cmd(
     filename: __filename,
   },
   async (
-    robin,
+    kavee,
     mek,
     m,
     {
@@ -67,7 +67,7 @@ cmd(
 
 MADE BY KAVINDU
         `;
-      await robin.sendMessage(
+      await kavee.sendMessage(
         from,
         {
           image: {
@@ -79,18 +79,18 @@ MADE BY KAVINDU
       );
       // Send the video if available
       if (hd) {
-        await robin.sendMessage(
+        await kavee.sendMessage(
           from,
           { video: { url: hd }, caption: "----------HD VIDEO----------" },
           { quoted: mek }
         );
-        await robin.sendMessage(
+        await kavee.sendMessage(
           from,
           { video: { url: sd }, caption: "----------SD VIDEO----------" },
           { quoted: mek }
         );
       } else if (sd) {
-        await robin.sendMessage(
+        await kavee.sendMessage(
           from,
           { video: { url: sd }, caption: "----------SD VIDEO----------" },
           { quoted: mek }
