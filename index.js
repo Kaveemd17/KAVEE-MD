@@ -120,7 +120,7 @@ async function connectToWA() {
       mek.key.remoteJid === "status@broadcast") &&
       config.AUTO_READ_STATUS
     ) {
-    await robin.readMessages([mek.key]);
+      await robin.readMessages([mek.key]);
   }
     const m = sms(robin, mek);
     const type = getContentType(mek.message);
