@@ -4,14 +4,14 @@ const config = require('../config');
 cmd(
   {
     pattern: "menu",
-    alise: ["getmenu"],
+    alias: ["getmenu"],
     react: "📁",
     desc: "get cmd list",
     category: "main",
     filename: __filename,
   },
   async (
-    robin,
+    kavee,
     mek,
     m,
     {
@@ -40,13 +40,13 @@ cmd(
     }
   ) => {
     try {    
-    let menu = {
-        main: "",
-        download: "",
-        group: "",
-        owner: "",
-        convert: "",
-        search: "",
+      let menu = {
+          main: "",
+          download: "",
+          group: "",
+          owner: "",
+          convert: "",
+          search: "",
       };
 
       for (let i = 0; i < commands.length; i++) {
@@ -88,7 +88,7 @@ ${menu.search}
 
 > KAVEE-MD MENU MSG
 `;
-      await robin.sendMessage(
+      await kavee.sendMessage(
         from,
         {
           image: {
