@@ -1,5 +1,5 @@
 {
-  "name": "👻KAVEE-MD👻",
+  "name": "KAVEE-MD",
   "description": "Powerful whatsapp bot made by sihilel",
   "logo": "https://telegra.ph/file/ad25b2227fa2a1a01b707.jpg",
   "keywords": ["bot"],
@@ -20,12 +20,12 @@
       "description": "Put your alive msg here.",
       "required": true
     }   
-},
+  },
 
-     "buildpacks": [
-        {
-            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-        }
-     ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
   "stack": "heroku-24"
 }
